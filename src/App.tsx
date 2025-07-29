@@ -446,7 +446,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       min="18"
                       max="28"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
-                      placeholder="Tu edad (18-28 años)"
+                      placeholder="Tu edad (18-45 años)"
                       required
                     />
                     <p className="text-xs text-gray-500 mt-1">Nuestros servicios están especializados para mujeres de 18-45 años</p>
