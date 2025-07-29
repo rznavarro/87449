@@ -38,7 +38,7 @@ function App() {
     if (!formData.problema.trim()) return 'Por favor describe brevemente tu consulta';
     
     const edad = parseInt(formData.edad);
-    if (isNaN(edad) || edad < 18 || edad > 48) {
+    if (isNaN(edad) || edad < 18 || edad > 45) {
       return 'Nuestros servicios están especialmente diseñados para mujeres entre 18 y 45 años. Para otras edades, contáctanos directamente.';
     }
     
@@ -164,7 +164,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Horarios Flexibles",
-      description: "Martes 8:00-12:30 y Jueves 14:00-19:00, adaptándonos a tu rutina"
+      description: "Martes 8:00-12:30"
     }
   ], []);
 
@@ -198,7 +198,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Matrona Yaritza Núñez</h1>
-                <p className="text-sm text-gray-600">Matrona Ginecóloga</p>
+             
               </div>
             </div>
             <button 
@@ -332,7 +332,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">¿Por qué elegir nuestra atención?</h2>
               <p className="text-xl text-gray-600 mb-8">
-                Como Matrona Yaritza Núñez, me especializo en brindar atención ginecológica integral con un enfoque humano, cercano y profesional para mujeres jóvenes.
+                Como Matrona Yaritza Núñez, me especializo en brindar atención ginecológica integral con un enfoque humano, cercano y profesional para jóvenes.
               </p>
               
               <div className="space-y-6">
@@ -577,7 +577,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Matrona. Yaritza Núñez</h3>
-                  <p className="text-gray-400">Matrona Ginecóloga</p>
+                 
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
