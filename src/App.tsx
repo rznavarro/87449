@@ -259,15 +259,12 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
                 <div className="text-center group">
-                  <div className="text-3xl font-bold text-pink-500 group-hover:scale-110 transition-transform">500+</div>
+                  <div className="text-3xl font-bold text-pink-500 group-hover:scale-165 transition-transform">500+</div>
                   <div className="text-sm text-gray-600">Pacientes Atendidas</div>
                 </div>
-                <div className="text-center group">
-                  <div className="text-3xl font-bold text-blue-500 group-hover:scale-110 transition-transform">5+</div>
-                  <div className="text-sm text-gray-600">Años de Experiencia</div>
                 </div>
                 <div className="text-center group">
-                  <div className="text-3xl font-bold text-green-500 group-hover:scale-110 transition-transform">98%</div>
+                  <div className="text-3xl font-bold text-green-500 group-hover:scale-165 transition-transform">98%</div>
                   <div className="text-sm text-gray-600">Satisfacción</div>
                 </div>
               </div>
