@@ -354,7 +354,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               <img 
                 src="https://ik.imagekit.io/fe5cnx5nq/WhatsApp%20Image%202025-07-29%20at%205.26.18%20PM.jpeg?updatedAt=1753829117629" 
                 alt="Atención Ginecologica profesional"
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                className="w-full h-[36rem] object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent rounded-2xl"></div>
             </div>
