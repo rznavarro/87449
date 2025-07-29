@@ -263,6 +263,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                   <div className="text-sm text-gray-600">Pacientes Atendidas</div>
                 </div>
                 </div>
+                </div>
                 <div className="text-center group">
                   <div className="text-3xl font-bold text-green-500 group-hover:scale-165 transition-transform">98%</div>
                   <div className="text-sm text-gray-600">Satisfacción</div>
