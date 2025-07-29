@@ -38,8 +38,8 @@ function App() {
     if (!formData.problema.trim()) return 'Por favor describe brevemente tu consulta';
     
     const edad = parseInt(formData.edad);
-    if (isNaN(edad) || edad < 18 || edad > 28) {
-      return 'Nuestros servicios están especialmente diseñados para mujeres entre 18 y 28 años. Para otras edades, contáctanos directamente.';
+    if (isNaN(edad) || edad < 18 || edad > 48) {
+      return 'Nuestros servicios están especialmente diseñados para mujeres entre 18 y 45 años. Para otras edades, contáctanos directamente.';
     }
     
     return null;
@@ -57,7 +57,7 @@ function App() {
 
     const mensaje = `🌸 *SOLICITUD DE CITA MÉDICA* 🌸
 
-Hola Dra. Yaritza, me gustaría agendar una cita para atención ginecológica.
+Hola Matrona Yaritza, me gustaría agendar una cita para atención ginecológica.
 
 👤 *DATOS PERSONALES:*
 • Nombre: ${formData.nombre}
@@ -95,7 +95,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
   }, [formData]);
 
   const openWhatsApp = useCallback((customMessage?: string) => {
-    const mensaje = customMessage || "🌸 Hola Dra. Yaritza, me gustaría obtener más información sobre sus servicios de ginecología. Estoy en La Cisterna, Santiago y me interesa agendar una consulta. ¡Gracias!";
+    const mensaje = customMessage || "🌸 Hola Matrona. Yaritza, me gustaría obtener más información sobre sus servicios de ginecología. Estoy en La Cisterna, Santiago y me interesa agendar una consulta. ¡Gracias!";
     const whatsappUrl = `https://wa.me/56952399709?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
   }, []);
@@ -175,7 +175,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
       rating: 5
     },
     {
-      text: "La Dra. Yaritza es súper cercana y resuelve todas las dudas. Me ayudó mucho con mi método anticonceptivo.",
+      text: "La Matrona Yaritza es súper cercana y resuelve todas las dudas. Me ayudó mucho con mi método anticonceptivo.",
       author: "Camila, 22 años", 
       rating: 5
     },
@@ -197,7 +197,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Dra. Yaritza Núñez</h1>
+                <h1 className="text-xl font-bold text-gray-900">Matrona Yaritza Núñez</h1>
                 <p className="text-sm text-gray-600">Matrona Ginecóloga</p>
               </div>
             </div>
@@ -241,7 +241,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button 
-                  onClick={() => openWhatsApp("🌸 Hola Dra. Yaritza, vi su página web y me gustaría agendar una cita. Soy de La Cisterna y necesito atención ginecológica. ¡Gracias!")}
+                  onClick={() => openWhatsApp("🌸 Hola Matrona. Yaritza, vi su página web y me gustaría agendar una cita. Soy de La Cisterna y necesito atención ginecológica. ¡Gracias!")}
                   className="group bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <Calendar className="w-5 h-5 mr-2" />
@@ -451,7 +451,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       placeholder="Tu edad (18-28 años)"
                       required
                     />
-                    <p className="text-xs text-gray-500 mt-1">Nuestros servicios están especializados para mujeres de 18-28 años</p>
+                    <p className="text-xs text-gray-500 mt-1">Nuestros servicios están especializados para mujeres de 18-45 años</p>
                   </div>
                   
                   <div>
@@ -522,8 +522,8 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       <Clock className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold text-gray-900">Horarios de Atención</h4>
-                        <p className="text-gray-600">• Martes: 8:00 AM - 12:30 PM</p>
-                        <p className="text-gray-600">• Jueves: 2:00 PM - 7:00 PM</p>
+                        <p className="text-gray-600">• Martes: 8:30 AM - 12:30 PM</p>
+                       
                       </div>
                     </div>
                     
@@ -576,12 +576,12 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                   <Heart className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Dra. Yaritza Núñez</h3>
+                  <h3 className="text-xl font-bold">Matrona. Yaritza Núñez</h3>
                   <p className="text-gray-400">Matrona Ginecóloga</p>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Atención ginecológica profesional y cercana para mujeres jóvenes en La Cisterna, Santiago.
+                Atención ginecológica profesional y cercana para jóvenes en La Cisterna, Santiago.
               </p>
             </div>
             
@@ -619,15 +619,15 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Dra. Yaritza Núñez - Matrona Ginecóloga. Todos los derechos reservados.</p>
-            <p className="text-sm mt-2">Atención especializada para mujeres de 18-28 años en La Cisterna, Santiago</p>
+            <p>&copy; 2025 Matrona. Yaritza Núñez - Matrona Ginecóloga. Todos los derechos reservados.</p>
+            <p className="text-sm mt-2">Atención especializada para mujeres de 18-45 años en La Cisterna, Santiago</p>
           </div>
         </div>
       </footer>
 
       {/* Floating WhatsApp Button */}
       <button
-        onClick={() => openWhatsApp("🌸 Hola Dra. Yaritza, estoy interesada en agendar una cita. Soy de La Cisterna y me gustaría más información sobre sus servicios. ¡Gracias!")}
+        onClick={() => openWhatsApp("🌸 Hola Matrona. Yaritza, estoy interesada en agendar una cita. Soy de La Cisterna y me gustaría más información sobre sus servicios. ¡Gracias!")}
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 z-50 animate-bounce hover:animate-none group"
         aria-label="Contactar por WhatsApp"
       >
