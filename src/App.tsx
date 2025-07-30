@@ -149,7 +149,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Award className="w-6 h-6" />,
       title: "Experiencia Profesional",
-      description: "Más de 5 años de experiencia especializada en ginecología y obstetricia"
+      description: "Más de 2 años de experiencia especializada en ginecología y obstetricia"
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -262,8 +262,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                   <div className="text-3xl font-bold text-pink-500 group-hover:scale-165 transition-transform">500+</div>
                   <div className="text-sm text-gray-600">Pacientes Atendidas</div>
                 </div>
-                </div>
-                </div>
+      
                 <div className="text-center group">
                   <div className="text-3xl font-bold text-green-500 group-hover:scale-165 transition-transform">98%</div>
                   <div className="text-sm text-gray-600">Satisfacción</div>
@@ -297,7 +296,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Servicios Especializados</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos atención integral en ginecología y obstetricia con enfoque personalizado para mujeres jóvenes que buscan cuidar su salud íntima.
+              Ofrecemos atención integral en ginecología y obstetricia con enfoque personalizado para jóvenes que buscan cuidar su salud íntima.
             </p>
           </div>
           
@@ -520,9 +519,9 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       <Clock className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold text-gray-900">Horarios de Atención</h4>
-                        <p className="text-gray-600">• Martes: 8:30 AM - 12:30 PM</p>
-                       
-                      </div>
+                        <p className="text-gray-600">• Martes: 9:00 AM - 12:30 PM</p>
+                         <p className="text-gray-600">• Jueves: 14:00 AM - 19:00 PM</p>
+                        </div>
                     </div>
                     
                     <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
