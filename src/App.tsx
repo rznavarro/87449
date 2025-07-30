@@ -95,7 +95,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
   }, [formData]);
 
   const openWhatsApp = useCallback((customMessage?: string) => {
-    const mensaje = customMessage || "🌸 Hola Matrona. Yaritza, me gustaría obtener más información sobre sus servicios de ginecología. Estoy en La Cisterna, Santiago y me interesa agendar una consulta. ¡Gracias!";
+    const mensaje = customMessage || "🌸 Hola Matrona Yaritza, me gustaría obtener más información sobre sus servicios de ginecología. Estoy en La Cisterna, Santiago y me interesa agendar una consulta. ¡Gracias!";
     const whatsappUrl = `https://wa.me/56952399709?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
   }, []);
@@ -164,7 +164,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Horarios Flexibles",
-      description: "Martes 9:00-12:30 y Jueves 14:00 - 19:00 "
+      description: "Martes 8:30-12:30 y Jueves 14:00-19:00"
     }
   ], []);
 
@@ -198,7 +198,6 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Matrona Yaritza Núñez</h1>
-             
               </div>
             </div>
             <button 
@@ -241,7 +240,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button 
-                  onClick={() => openWhatsApp("🌸 Hola Matrona. Yaritza, vi su página web y me gustaría agendar una cita. Soy de La Cisterna y necesito atención ginecológica. ¡Gracias!")}
+                  onClick={() => openWhatsApp("🌸 Hola Matrona Yaritza, vi su página web y me gustaría agendar una cita. Soy de La Cisterna y necesito atención ginecológica. ¡Gracias!")}
                   className="group bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <Calendar className="w-5 h-5 mr-2" />
@@ -257,25 +256,21 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               </div>
               
               {/* Stats */}
-           <section>
-  <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
-    <div className="text-center group">
-      <div className="text-3xl font-bold text-pink-500 group-hover:scale-1110 transition-transform">500+</div>
-      <div className="text-sm text-gray-600">Pacientes Atendidas</div>
-    </div>
-
-    <div className="text-center group">
-      <div className="text-3xl font-bold text-blue-500 group-hover:scale-110 transition-transform">+2</div>
-      <div className="text-sm text-gray-600">años de experiencia</div>
-    </div>
-
-    <div className="text-center group">
-      <div className="text-3xl font-bold text-green-500 group-hover:scale-110 transition-transform">98%</div>
-      <div className="text-sm text-gray-600">Satisfacción</div>
-    </div>
-  </div>
-</section>
-
+              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
+                <div className="text-center group">
+                  <div className="text-3xl font-bold text-pink-500 group-hover:scale-110 transition-transform">500+</div>
+                  <div className="text-sm text-gray-600">Pacientes Atendidas</div>
+                </div>
+                <div className="text-center group">
+                  <div className="text-3xl font-bold text-blue-500 group-hover:scale-110 transition-transform">+2</div>
+                  <div className="text-sm text-gray-600">años de experiencia</div>
+                </div>
+                <div className="text-center group">
+                  <div className="text-3xl font-bold text-green-500 group-hover:scale-110 transition-transform">98%</div>
+                  <div className="text-sm text-gray-600">Satisfacción</div>
+                </div>
+              </div>
+            </div>
           
             {/* Image */}
             <div className="relative">
@@ -357,7 +352,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
             <div className="relative">
               <img 
                 src="https://ik.imagekit.io/fe5cnx5nq/WhatsApp%20Image%202025-07-29%20at%205.26.18%20PM.jpeg?updatedAt=1753829117629" 
-                alt="Atención Ginecologica profesional"
+                alt="Atención Ginecológica profesional"
                 className="w-full h-[36rem] object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent rounded-2xl"></div>
@@ -450,7 +445,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       value={formData.edad}
                       onChange={handleInputChange}
                       min="18"
-                      max="28"
+                      max="45"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
                       placeholder="Tu edad (18-45 años)"
                       required
@@ -526,9 +521,9 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       <Clock className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold text-gray-900">Horarios de Atención</h4>
-                        <p className="text-gray-600">• Martes: 9:00 AM - 12:30 PM</p>
-                         <p className="text-gray-600">• Jueves: 14:00 AM - 19:00 PM</p>
-                        </div>
+                        <p className="text-gray-600">• Martes: 8:30 AM - 12:30 PM</p>
+                        <p className="text-gray-600">• Jueves: 14:00 PM - 19:00 PM</p>
+                      </div>
                     </div>
                     
                     <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
@@ -580,8 +575,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                   <Heart className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Matrona. Yaritza Núñez</h3>
-                 
+                  <h3 className="text-xl font-bold">Matrona Yaritza Núñez</h3>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
@@ -623,7 +617,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Matrona. Yaritza Núñez - Matrona Ginecóloga. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Matrona Yaritza Núñez - Matrona Ginecóloga. Todos los derechos reservados.</p>
             <p className="text-sm mt-2">Atención especializada para mujeres de 18-45 años en La Cisterna, Santiago</p>
           </div>
         </div>
@@ -631,7 +625,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
 
       {/* Floating WhatsApp Button */}
       <button
-        onClick={() => openWhatsApp("🌸 Hola Matrona. Yaritza, estoy interesada en agendar una cita. Soy de La Cisterna y me gustaría más información sobre sus servicios. ¡Gracias!")}
+        onClick={() => openWhatsApp("🌸 Hola Matrona Yaritza, estoy interesada en agendar una cita. Soy de La Cisterna y me gustaría más información sobre sus servicios. ¡Gracias!")}
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 z-50 animate-bounce hover:animate-none group"
         aria-label="Contactar por WhatsApp"
       >
