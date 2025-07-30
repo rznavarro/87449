@@ -154,7 +154,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Users className="w-6 h-6" />,
       title: "Atención Personalizada",
-      description: "Enfoque individual y cercano, especialmente para mujeres de 18-28 años"
+      description: "Enfoque individual y cercano, especialmente para mujeres de 18-45 años"
     },
     {
       icon: <Shield className="w-6 h-6" />,
@@ -164,7 +164,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Horarios Flexibles",
-      description: "Martes 8:00-12:30"
+      description: "Martes 9:00-12:30 y Jueves 14:00 - 19:00 "
     }
   ], []);
 
