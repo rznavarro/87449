@@ -154,7 +154,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Users className="w-6 h-6" />,
       title: "Atención Personalizada",
-      description: "Enfoque individual y cercano, especialmente para mujeres de 18-45 años"
+      description: "Enfoque individual y cercano, especialmente para mujeres de 18-70 años"
     },
     {
       icon: <Shield className="w-6 h-6" />,
@@ -234,7 +234,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                   <span className="text-pink-500 block">Profesional en La Cisterna</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                  Acompañando tu salud íntima con respeto, confianza y profesionalismo. Servicios especializados para mujeres jóvenes que buscan llevar su sexualidad de manera tranquila y segura.
+                  Acompañando tu salud íntima con respeto, confianza y profesionalismo. Servicios especializados para mujeres que buscan llevar su sexualidad de manera tranquila y segura.
                 </p>
               </div>
               
@@ -450,7 +450,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                       placeholder="Tu edad (18-45 años)"
                       required
                     />
-                    <p className="text-xs text-gray-500 mt-1">Nuestros servicios están especializados para mujeres de 18-45 años</p>
+                    <p className="text-xs text-gray-500 mt-1">Nuestros servicios están especializados para mujeres de 18-70 años</p>
                   </div>
                   
                   <div>
@@ -618,7 +618,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Matrona Yaritza Núñez - Matrona Ginecóloga. Todos los derechos reservados.</p>
-            <p className="text-sm mt-2">Atención especializada para mujeres de 18-45 años en La Cisterna, Santiago</p>
+            <p className="text-sm mt-2">Atención especializada para mujeres de 18-70 años en La Cisterna, Santiago</p>
           </div>
         </div>
       </footer>
