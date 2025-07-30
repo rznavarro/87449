@@ -38,8 +38,8 @@ function App() {
     if (!formData.problema.trim()) return 'Por favor describe brevemente tu consulta';
     
     const edad = parseInt(formData.edad);
-    if (isNaN(edad) || edad < 18 || edad > 45) {
-      return 'Nuestros servicios están especialmente diseñados para mujeres entre 18 y 45 años. Para otras edades, contáctanos directamente.';
+    if (isNaN(edad) || edad < 14 || edad > 70) {
+      return 'Nuestros servicios están especialmente diseñados para mujeres entre 14 y 70 años. Para otras edades, contáctanos directamente.';
     }
     
     return null;
@@ -154,7 +154,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
     {
       icon: <Users className="w-6 h-6" />,
       title: "Atención Personalizada",
-      description: "Enfoque individual y cercano, especialmente para mujeres de 18-70 años"
+      description: "Enfoque individual y cercano, especialmente para mujeres"
     },
     {
       icon: <Shield className="w-6 h-6" />,
