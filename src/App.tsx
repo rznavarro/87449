@@ -331,7 +331,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">¿Por qué elegir nuestra atención?</h2>
               <p className="text-xl text-gray-600 mb-8">
-                Como Matrona Yaritza Núñez, me especializo en brindar atención ginecológica integral con un enfoque humano, cercano y profesional para jóvenes.
+                Como Matrona Yaritza Núñez, me especializo en brindar atención ginecológica integral con un enfoque humano, cercano y profesional para Mujeres.
               </p>
               
               <div className="space-y-6">
@@ -578,7 +578,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Atención ginecológica profesional y cercana para jóvenes en La Cisterna, Santiago.
+                Atención ginecológica profesional y cercana para Mujeres en La Cisterna, Santiago.
               </p>
             </div>
             
