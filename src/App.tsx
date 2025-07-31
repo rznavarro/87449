@@ -95,7 +95,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
   }, [formData]);
 
   const openWhatsApp = useCallback((customMessage?: string) => {
-    const mensaje = customMessage || "🌸 Hola Matrona Yaritza, me gustaría obtener más información sobre sus servicios de ginecología. Estoy en La Cisterna, Santiago y me interesa agendar una consulta. ¡Gracias!";
+    const mensaje = customMessage || "🌸 Hola Yaritza, me gustaría obtener más información sobre sus servicios de ginecología. Estoy en La Cisterna, Santiago y me interesa agendar una consulta. ¡Gracias!";
     const whatsappUrl = `https://wa.me/56952399709?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
   }, []);
@@ -113,7 +113,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
       title: "Control Ginecológico",
       description: "Consultas ginecológicas regulares y atención preconcepcional para planificar tu maternidad.",
       color: "blue",
-      features: ["Consulta ginecológica", "Control preconcepcional", "Revisiones periódicas"]
+      features: ["Consulta ginecológica", "Control preconcepcional", "Control prenatal", "Revisiones periódicas"]
     },
     {
       icon: <Activity className="w-8 h-8" />,
@@ -240,7 +240,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button 
-                  onClick={() => openWhatsApp("🌸 Hola Matrona Yaritza, vi su página web y me gustaría agendar una cita. Soy de La Cisterna y necesito atención ginecológica. ¡Gracias!")}
+                  onClick={() => openWhatsApp("🌸 Hola Yaritza, vi su página web y me gustaría agendar una cita. Soy de La Cisterna y necesito atención ginecológica. ¡Gracias!")}
                   className="group bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <Calendar className="w-5 h-5 mr-2" />
@@ -298,7 +298,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Servicios Especializados</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos atención integral en ginecología y obstetricia con enfoque personalizado para jóvenes que buscan cuidar su salud íntima.
+              Ofrecemos atención integral en ginecología y obstetricia con enfoque personalizado para Mujeres que buscan cuidar su salud íntima.
             </p>
           </div>
           
@@ -331,7 +331,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">¿Por qué elegir nuestra atención?</h2>
               <p className="text-xl text-gray-600 mb-8">
-                Como Matrona Yaritza Núñez, me especializo en brindar atención ginecológica integral con un enfoque humano, cercano y profesional para Mujeres.
+                Como Matrona, me especializo en brindar atención ginecológica integral con un enfoque humano, cercano y profesional para Mujeres.
               </p>
               
               <div className="space-y-6">
@@ -624,7 +624,7 @@ Quedo atenta a su respuesta para coordinar la cita. ¡Gracias!`;
 
       {/* Floating WhatsApp Button */}
       <button
-        onClick={() => openWhatsApp("🌸 Hola Matrona Yaritza, estoy interesada en agendar una cita. Soy de La Cisterna y me gustaría más información sobre sus servicios. ¡Gracias!")}
+        onClick={() => openWhatsApp("🌸 Hola Yaritza, estoy interesada en agendar una cita. Soy de La Cisterna y me gustaría más información sobre sus servicios. ¡Gracias!")}
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 z-50 animate-bounce hover:animate-none group"
         aria-label="Contactar por WhatsApp"
       >
